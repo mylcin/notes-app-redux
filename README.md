@@ -1,5 +1,5 @@
 # React Notes App 
-Live Demo:
+Live Demo: [Click Here](https://notes-app-my.netlify.app/)
 
 ## Usage
 In the project directory, you can run:

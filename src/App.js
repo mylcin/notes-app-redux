@@ -27,6 +27,7 @@ function App() {
           ])
         )
       );
+      dispatch(getNotes(notes));
     }
   }, [dispatch]);
 
