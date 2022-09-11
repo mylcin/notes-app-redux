@@ -1,4 +1,3 @@
-import { nanoid } from "@reduxjs/toolkit";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Body from "./components/Body";
@@ -13,21 +12,7 @@ function App() {
     if (notes !== null) {
       dispatch(getNotes(notes));
     } else {
-      JSON.stringify(
-        localStorage.setItem(
-          "notes",
-          JSON.stringify([
-            {
-              id: nanoid(),
-              title: "Example Note",
-              content:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae odio voluptatibus laboriosam nihil alias vitae, expedita dolorum minima, unde pariatur tempora rem doloribus est, ut adipisci dolore sit! Sequi, deleniti!",
-              color: "#fde047",
-            },
-          ])
-        )
-      );
-      dispatch(getNotes(notes));
+      JSON.stringify(localStorage.setItem("notes", JSON.stringify([])));
     }
   }, [dispatch]);
 
