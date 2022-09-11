@@ -1,17 +1,9 @@
-import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 export const notesSlice = createSlice({
   name: "notes",
   initialState: {
-    items: [
-      {
-        id: nanoid(),
-        title: "Example Note",
-        content:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae odio voluptatibus laboriosam nihil alias vitae, expedita dolorum minima, unde pariatur tempora rem doloribus est, ut adipisci dolore sit! Sequi, deleniti!",
-        color: "#fde047",
-      },
-    ],
+    items: [],
     colors: [
       { name: "red", code: "#fca5a5" },
       { name: "orange", code: "#fdba74" },
