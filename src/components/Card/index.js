@@ -7,7 +7,7 @@ function Card() {
 
   return (
     <>
-      {notes.map((note) => {
+      {notes && notes.map((note) => {
         return (
           <div
             key={note.id}
